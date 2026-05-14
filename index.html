@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H-FLOW RSGM Unimus</title>
-    <script>
-        // Ambil parameter unit dari link (misal ?u=IGD)
-        const query = window.location.search;
-        // URL Master Apps Script Mas (Pastikan TIDAK ADA /u/0/ di tengahnya!)
-        const targetUrl = "https://script.google.com/macros/s/AKfycbyfbcGEQ1zyfqWARkekEbLZJ-Po92QGEbvaNucdZ7sElVJXGWm6F8Nm2_-WGYEyMbjwBg/exec";
-        
-        // Langsung pindahkan halaman ke Apps Script
-        window.location.href = targetUrl + query;
-    </script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f0f4f8; text-align: center; }
+        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 80%; max-width: 400px; }
+        h2 { color: #1e293b; margin-bottom: 20px; font-size: 1.2rem; }
+        .btn { background: #2563eb; color: white; padding: 15px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; transition: background 0.3s; border: none; cursor: pointer; font-size: 1rem; }
+        .btn:hover { background: #1d4ed8; }
+        p { color: #64748b; font-size: 0.9rem; margin-top: 15px; }
+    </style>
 </head>
 <body>
-    <p>Mohon tunggu, sedang memuat H-FLOW...</p>
+    <div class="card">
+        <h2>Sistem Audit H-FLOW<br>RSGM Unimus</h2>
+        <!-- Link ini akan langsung membuka aplikasi tanpa lewat Drive -->
+        <a href="https://script.google.com/macros/s/AKfycbyfbcGEQ1zyfqWARkekEbLZJ-Po92QGEbvaNucdZ7sElVJXGWm6F8Nm2_-WGYEyMbjwBg/exec" class="btn">BUKA FORM LAPORAN</a>
+        <p>Ketuk tombol di atas untuk memulai audit.</p>
+    </div>
 </body>
 </html>
