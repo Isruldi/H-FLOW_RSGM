@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H-FLOW RSGM Unimus</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f0f4f8; text-align: center; }
-        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 80%; max-width: 400px; }
-        h2 { color: #1e293b; margin-bottom: 20px; font-size: 1.2rem; }
-        .btn { background: #2563eb; color: white; padding: 15px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; transition: background 0.3s; border: none; cursor: pointer; font-size: 1rem; }
-        .btn:hover { background: #1d4ed8; }
-        p { color: #64748b; font-size: 0.9rem; margin-top: 15px; }
+        body { font-family: sans-serif; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f8fafc; text-align: center; }
+        .box { background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid #e2e8f0; width: 85%; }
+        .btn { background: #1a73e8; color: white; padding: 18px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: block; font-size: 1.1rem; margin-top: 20px; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h2>Sistem Audit H-FLOW<br>RSGM Unimus</h2>
-        <!-- Link ini akan langsung membuka aplikasi tanpa lewat Drive -->
-        <a href="https://script.google.com/macros/s/AKfycbyfbcGEQ1zyfqWARkekEbLZJ-Po92QGEbvaNucdZ7sElVJXGWm6F8Nm2_-WGYEyMbjwBg/exec" class="btn">BUKA FORM LAPORAN</a>
-        <p>Ketuk tombol di atas untuk memulai audit.</p>
+    <div class="box">
+        <h2 style="color: #1e293b;">Sistem Audit H-FLOW</h2>
+        <p style="color: #64748b;">Klik tombol di bawah untuk membuka form:</p>
+        
+        <!-- target="_blank" dan rel="noopener" memaksa browser membuka tab baru, bukan aplikasi Drive -->
+        <a href="https://script.google.com/macros/s/AKfycbyfbcGEQ1zyfqWARkekEbLZJ-Po92QGEbvaNucdZ7sElVJXGWm6F8Nm2_-WGYEyMbjwBg/exec" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn">MULAI ISI LAPORAN</a>
     </div>
 </body>
 </html>
