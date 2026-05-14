@@ -1,27 +1,18 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>H-FLOW RSGM Unimus</title>
-    <style>
-        /* Memaksa tampilan 100% layar tanpa sisa margin/border */
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #f8fafc; }
-        iframe { border: none; width: 100%; height: 100%; display: block; }
-    </style>
+    <script>
+        // Ambil parameter unit dari link (misal ?u=IGD)
+        const query = window.location.search;
+        // URL Master Apps Script Mas (Pastikan TIDAK ADA /u/0/ di tengahnya!)
+        const targetUrl = "https://script.google.com/macros/s/AKfycbyfbcGEQ1zyfqWARkekEbLZJ-Po92QGEbvaNucdZ7sElVJXGWm6F8Nm2_-WGYEyMbjwBg/exec";
+        
+        // Langsung pindahkan halaman ke Apps Script
+        window.location.href = targetUrl + query;
+    </script>
 </head>
 <body>
-    <iframe id="app-frame"></iframe>
-
-    <script>
-        // 1. Menangkap otomatis parameter Unit & Modul dari QR Code yang di-scan
-        const urlParams = window.location.search;
-        
-        // 2. Link Master Apps Script Anda yang bersih (Ganti jika ada URL baru)
-        const scriptUrl = "https://script.google.com/macros/s/AKfycbyfbcGEQ1zyfqWARkekEbLZJ-Po92QGEbvaNucdZ7sElVJXGWm6F8Nm2_-WGYEyMbjwBg/exec";
-        
-        // 3. Memaksa Iframe membuka link Apps Script beserta parameternya
-        document.getElementById('app-frame').src = scriptUrl + urlParams;
-    </script>
+    <p>Mohon tunggu, sedang memuat H-FLOW...</p>
 </body>
 </html>
